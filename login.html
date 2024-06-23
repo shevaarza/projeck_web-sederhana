@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Registration</title>
+  <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="uji coba/plugin/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-header text-center">
+            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content" id="myTabContent">
+ 
+              <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <form id="loginForm">
+                  <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="loginEmail" required>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2"  id="loginPassword">
+                    <span class="input-group-text"><i class="fa-solid fa-eye"></i></span>
+                  </div>
+             <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                <form id="registerForm">
+                  <div class="mb-3">
+                    <label for="registerEmail" class="form-label">Masukan email</label>
+                    <input type="email" class="form-control" id="registerEmail" required>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Password baru" aria-label="Password baru" aria-describedby="basic-addon2"  id="resetPassword">
+                    <span class="input-group-text"><i class="fa-solid fa-eye"></i></span>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+  <script src="uji coba/plugin/fontawesome/js/all.min.js  "></script>
+  <script src="jQuery 3.7.0_ Staying in Order/jquery-jquery-ef18fe9/dist/jquery.min.js"></script>
+  <script src="scripts1.js"></script>
+</body>
+</html>
